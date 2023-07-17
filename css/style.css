@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/* Menu desktop */
+header{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.menu-desktop ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.option-menu{
+    border-radius: 30px;
+    padding: 3px;
+    text-decoration: none;
+    transition: 500ms;
+    color: black;
+}
+nav.menu-desktop ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+
+/* main-bg */
+section.main-bg{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 8% 0;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+.main-bg h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+.main-bg p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+section.main-bg > .container{
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.253);
+    top: 0;
+    left: 0;
+}
+.diferenciais{
+    padding: 2%;
+}
+.diferenciais h2{
+    text-align: center;
+    padding: 1%;
+}
+.cartoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.card{
+    padding: 2%;
+    text-align: center;
+    border-radius: 30px;
+    width: 33.3%;
+    background: rgb(221, 221, 221);
+}
+.card i{
+    font-size: 40px;
+}
+.card > div{
+    margin: 5% auto;
+    width: 0%;
+    height: 1px;
+    background: black;
+    transition: 500ms;
+}
+.card:hover > div{
+    width: 80%;
+}
+.redes-sociais{
+    padding: 4%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.redes-sociais h1{
+    text-align: center;
+    color: white;
+    font-size: 40px
+
+}
+.redes-sociais a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.redes-sociais i{
+    font-size: 100px;
+}
+.rs-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border: solid black 3px;
+    padding: 6%;
+    border-radius: 30px;
+    transition: 500ms;
+}
+.rs-card:hover{
+    border: solid white 3px;
+}
+.cardrs{
+    display: flex; flex-direction: row; justify-content: space-between; padding: 2%;
+}
+footer{
+    text-align: center;
+}
+
+@media(max-width: 450px) {
+    header{
+        flex-direction: column;
+    }
+    .cartoes{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .cardrs{
+        flex-direction: column;
+    }
+    .main-bg p {
+        font-size: 15px;
+    }
+    nav{
+        padding: 1%;
+    }
+ 
+}

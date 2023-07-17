@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Menu desktop */
+header{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.menu-desktop ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.option-menu{
+    border-radius: 30px;
+    padding: 3px;
+    text-decoration: none;
+    transition: 500ms;
+    color: black;
+}
+nav.menu-desktop ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+footer{
+    text-align: center;
+}
+.main-up{
+    padding: 0 2%;
+    display: flex;
+    gap: 10px;
+}
+.card{
+    padding: 2%;
+    background: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+.imagem{
+    width: 50%; border-radius: 30px;
+}
+.card h1{
+    text-align: center;
+    font-size: 40px;
+}
+.card p{
+    font-size: 20px;
+}
+.slider{
+    min-width: 100%;
+    margin-top: 2%;
+
+}
+
+.slide1, .slide2, .slide3, .slide4{
+    min-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide1{
+    background-image: url('../images/sliderimages/slide1.jpg') ;
+}
+.slide2{
+
+    background-image: url('../images/sliderimages/slide2.jpg') ;
+
+}
+.slide3{
+
+    background-image: url('../images/sliderimages/slide3.jpg') ;
+
+}
+.slide4{
+
+    background-image: url('../images/sliderimages/slide4.jpg') ;
+}
+
+.slides{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+}
+.button{
+    display: flex;
+    width: 50%;
+    margin:0 auto;
+    font-size: 40px;
+    transition: 500ms;
+    cursor: pointer;
+}
+.left{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.button.left:hover{
+    color: white;
+    background: linear-gradient(90deg, black, black, transparent);
+}
+.button.right:hover{
+    color: white;
+    background: linear-gradient(270deg, black, black, transparent);
+}
+@media(max-width: 450px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 1%;
+    }
+    .main-up{
+        flex-direction: column;
+    }
+    .imagem{
+        width: 100%;
+    }
+}

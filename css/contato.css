@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Menu desktop */
+header{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.menu-desktop ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.option-menu{
+    border-radius: 30px;
+    padding: 3px;
+    text-decoration: none;
+    transition: 500ms;
+    color: black;
+}
+nav.menu-desktop ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+
+section{
+    margin: auto 0;
+    padding: 2%;
+    background: black;
+    color: white;
+    height: 100%;
+    font-size: 40px;
+}
+.card{
+    padding: 2%;
+    border: solid white 1px;
+    border-radius: 30px;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12%;
+}
+.button{
+    font-size: 30px;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    border-radius: 30px;
+    width: 80%;
+    transition: 500ms;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+@media(max-width: 450px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 1%;
+    }
+    section{
+        font-size: 20px;
+    }
+    .button{
+        font-size: 15px;
+
+    }
+}
